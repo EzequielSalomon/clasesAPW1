@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <h2>Escribinos</h2>
+        <p>Completá el siguiente formulario con tus datos y contame brevemente qué te trajo hasta acá. Te respondo por
+            correo electrónico dentro de las 48 horas hábiles. Si tenés alguna consulta urgente, también podés
+            escribirme directamente a: valentina.rios.nutricion@gmail.com</p>
+        <form action="/contacto.html" method="post">
+            <label for="">Nombre y Apellido</label>
+            <input type="text" name="nombre" id="id-nombre-apellido">
+            <br>
+            <label for="">Email</label>
+            <input type="email" name="email" id="id-email">
+            <br>
+            <label for="">Telefono</label>
+            <input type="tel" name="telefono" id="id-telefono">
+            <br>
+            <label for="">Atencion</label>
+            <select name="tipo-atencion" id="id-atencion">
+                <option value="Palermo">Palermo</option>
+                <option value="Online">Online</option>
+                <option value="Sin Preferencia">Sin Preferencia</option>
+            </select>
+            <br>
+             <label for="">¿Qué servicio te interesa?</label>
+             <select name="tipo-servicio" id="id-servicio">
+                <option value="Consulta">Consulta Inicial</option>
+                <option value="Seguimiento">Seguimiento Mensual</option>
+                <option value="Nutricion">Nutricion Deportiva</option>
+                <option value="Taller">Taller Grupal</option>
+                <option value="Nose">Nose Todavia</option>
+            </select>
+            <br>
+            <label for="">¿Cuál es tu principal objetivo?</label>
+            <select name="objetivo" id="id-objetivo">
+                <option value="Bajar de peso">Bajar de Peso</option>
+                <option value="Mejorar mi alimentacion general">Mejorar mi alimentacion general</option>
+                <option value="Rendimiento Deportivo">Rendimiento Deportivo</option>
+                <option value="Control de una patalogia">Control de una patalogia</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <br>
+            <label for="">Contame brevemente tu situación o consulta</label>
+            <textarea name="comentarios" id="id-comentarios"></textarea>
+            <br>
+             <label for="">Acepto que mis datos sean utilizados para responder a mi consulta </label>
+            <input type="checkbox" name="acepto" id="id-acepto">
+            <br>
+            <input type="submit" value="Enviar">
+            <button type="submit">Enviar</button>
+
+
+        </form>
+        <h2>Donde estamos</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.995623706828!2d-64.18696869537986!3d-31.42253478860399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2855d648fa1%3A0xc450c66c8b10b5d3!2sRondeau%20175%2C%20X5000AVC%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1788387778078!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </main>
+    <footer>
+     
+    </footer>
+</body>
+
+</html>

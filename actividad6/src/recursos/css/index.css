@@ -1,0 +1,86 @@
+/*  estilos */
+/*  SON DE TIPO, COINCIDE CON LA ETIQUETA DE HTML, VA SIN PUNTO ADELANTE*/
+
+@font-face {
+    font-family: Nono;
+    src: url(./fonts/Nono-Regular.woff2) format('woff2');
+}
+
+html {
+   font-family: Nono, sans-serif;
+   
+}
+
+body {
+    background-color: #e01e1e;
+    font-family: Nono, sans-serif;
+}
+
+header {
+    background-color: #442222;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+*{
+    outline: 1px #e01e1e;
+}
+
+/* selector de CLASE, PROPIEDAD Y VALOR*/
+/* selector de CLASE, VINCULADO CON ATRIBUTO CLASS, SE DECLARA CON EL PUNTO ADELANTE*/
+/* CLASE ES PUNTUAL, SOLO RESPONDE A LOS ELEMENTOS QUE LA CONTIENEN */
+/* SELECTO DE TIPO A, RESPONDE A TODO LOS ENLACES */
+
+.vinculo-pie {
+    color: #333333;
+}
+
+.cabecera-principal {
+    background-color: #442222;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.cabecera-principal nav a {
+    color: #0ce70c;
+}
+
+.contenido-principal {
+    background-color: #e01e1e;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie-principal {
+    background-color: #442222;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;}
+
+    .contenido-principal form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contenido-principal img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.contenido-principal p,
+.contenido-principal h3 {
+    text-align: left;
+}
+
+.contenido-principal iframe {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+}
