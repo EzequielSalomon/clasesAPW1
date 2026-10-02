@@ -1,0 +1,75 @@
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* no mueve el header, pero lo convierte en la
+                           referencia para ubicar al logo */
+    z-index: 10;         /* capa de más arriba que el main (0) y el footer (0) */
+}
+
+label {
+    display: block;      /* la etiqueta ocupa su propio renglón */
+    margin-bottom: 5px;  /* pequeño espacio entre la etiqueta y su campo */
+}
+
+input,
+select {
+    margin-bottom: 15px; /* separa cada campo del que sigue */
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    background-color: #cd3c3c;
+    }
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute; /* sale del flujo normal: no ocupa espacio y
+                           el título sigue centrado como si no estuviera */
+    top: 10px;          /* distancia desde el borde de arriba del header */
+    right: 20px;        /* distancia desde el borde derecho del header */
+    width: 80px;
+}
+
+.boton-enviar {
+    background-color: #4CAF50;
+    color: rgb(9, 0, 0);
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-flotante {
+    position: fixed;  /* sale del flujo y se ubica respecto a la ventana:
+                         no se mueve aunque se haga scroll */
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;      /* mayor que el header (10): es la capa de más arriba */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}

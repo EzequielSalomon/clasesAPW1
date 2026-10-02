@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="./recursos/imagenes/highlight.webp" alt="Logo" class="logo">
+        <nav>
+            <h1>Formulario de contacto</h1>
+            <h2>Una vez completado, nos pondremos en contacto contigo.</h2>
+            <h3>El conocimiento es la única herramienta que crece cuanto más la compartes y que nadie te puede arrebatar.</h3>
+        </nav>
+    </header>       
+    <main> 
+        <br>
+        <br>
+        <br>
+    <form action="./index.html" method="post">
+            <label for="id-nombre">Nombre</label>
+            <input type="text" name="nombre" id="id-nombre" required>
+            <br> <!--etiqueta br para salto de linea-->
+            <label for="id-apellido">Apellido</label>
+            <input type="text" name="apellido" id="id-apellido" required>
+            <br>
+            <label for="id-email">Email</label>
+            <input type="email" name="email" id="id-email" required>
+            <br>
+            <label for="id-telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="id-telefono" required>
+            <br>
+             <label for="id-carrera">¿Qué carrera te interesa?</label>
+             <select name="tipo-carrera" id="id-carrera">
+                <option value="">Elige una opción</option>
+                <option value="Analista en Sistemas">Analista en Sistemas</option>
+                <option value="Ciberseguridad">Ciberseguridad</option>
+                <option value="Diseño Grafico">Diseño Gráfico</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Recursos Humanos">Recursos Humanos</option>
+                </select>
+                <br>
+                 <label for="id-modalidad">Tipo de modalidad</label>
+            <select name="tipo-modalidad" id="id-modalidad">
+                <option value="">Elige una opción</option>
+                <option value="Distancia">Distancia</option>
+                <option value="Mixto">Mixto</option>
+                <option value="Presencial">Presencial</option>
+            </select>
+            <br>
+            
+            <input type="submit" value="Enviar" class="boton-enviar">
+            <div id="estado" role="alert" aria-live="assertive"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </form>
+            
+
+    </main>
+    
+    <footer>
+        <p> Copyright © 2026 Ezequiel Salomón</p> 
+        <p>Córdoba, Argentina</p>
+    </footer> 
+    <a href="#" class="boton-flotante" aria-label="Volver arriba">↑</a> <!-- Botón flotante para volver arriba -->
+</body>
+</html>
