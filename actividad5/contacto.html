@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto – Valentina Ríos Nutricionista</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <p>Escribime</p>
+        <nav>
+            <a href="./index.html">Inicio</a> |
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <p>
+            Completá el formulario con tus datos y contame brevemente qué te trajo hasta acá. Te respondo por correo
+            dentro de las 48 horas hábiles para coordinar tu primera consulta. Si tenés una consulta urgente, también
+            podés escribirme a <a href="mailto:valentina.rios.nutricion@gmail.com">valentina.rios.nutricion@gmail.com</a>.
+        </p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="nombre">Nombre y apellido:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono">
+            </p>
+
+            <p>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" min="18">
+            </p>
+
+            <p>
+                <label for="modalidad">Modalidad de atención:</label><br>
+                <select id="modalidad" name="modalidad" required>
+                    <option value="">Elegí una opción</option>
+                    <option value="presencial">Presencial en Palermo</option>
+                    <option value="online">Online</option>
+                    <option value="sin-preferencia">Sin preferencia</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="servicio">¿Qué servicio te interesa?</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Elegí una opción</option>
+                    <option value="consulta-inicial">Consulta inicial</option>
+                    <option value="seguimiento">Seguimiento mensual</option>
+                    <option value="deportiva">Nutrición deportiva</option>
+                    <option value="taller">Taller grupal</option>
+                    <option value="no-se">No sé todavía</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>¿Cuál es tu principal objetivo?</legend>
+                <input type="radio" id="obj-peso" name="objetivo" value="bajar-peso" required>
+                <label for="obj-peso">Bajar de peso</label><br>
+
+                <input type="radio" id="obj-alimentacion" name="objetivo" value="mejorar-alimentacion">
+                <label for="obj-alimentacion">Mejorar mi alimentación general</label><br>
+
+                <input type="radio" id="obj-deporte" name="objetivo" value="rendimiento">
+                <label for="obj-deporte">Rendimiento deportivo</label><br>
+
+                <input type="radio" id="obj-patologia" name="objetivo" value="patologia">
+                <label for="obj-patologia">Control de una patología</label><br>
+
+                <input type="radio" id="obj-otro" name="objetivo" value="otro">
+                <label for="obj-otro">Otro</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Realizás actividad física?</legend>
+                <input type="radio" id="actividad-si" name="actividad" value="si">
+                <label for="actividad-si">Sí</label>
+
+                <input type="radio" id="actividad-no" name="actividad" value="no">
+                <label for="actividad-no">No</label>
+            </fieldset>
+
+            <p>
+                <label for="consulta">Contame brevemente tu situación o consulta:</label><br>
+                <textarea id="consulta" name="consulta" rows="6" cols="50" required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto que mis datos se usen solo para responder mi consulta</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar consulta">
+            </p>
+        </form>
+
+        <section>
+            <h2>Dónde estamos</h2>
+            <p>
+                Consultorio en Palermo, Ciudad Autónoma de Buenos Aires. Atención con turno previo, de lunes a viernes
+                de 9 a 19 h.
+            </p>
+            <iframe src="https://www.google.com/maps?q=Plaza+Serrano,+Palermo,+Buenos+Aires&amp;output=embed" width="600" height="400" title="Mapa del consultorio en Palermo, Buenos Aires" loading="lazy"></iframe>
+                
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2026 Valentina Ríos – Nutricionista Clínica y Deportiva · M.N. 12.345 · Palermo, Buenos Aires</p>
+    </footer>
+</body>
+
+</html>
