@@ -1,0 +1,58 @@
+/* 1. FUENTE: se carga la tipografía Sora que está en el proyecto. */
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+/* 2. SELECTOR UNIVERSAL
+   Se verifica que el modelo de caja sea el alternativo (border-box):
+   el ancho incluye el padding y el borde, así los tamaños son más fáciles de calcular. */
+* {
+    box-sizing: border-box;
+}
+
+/* 3. SELECTORES DE TIPO (van arriba porque tienen menor especificidad) */
+
+/* Regla para el elemento raíz: la fuente y el tamaño se heredan a toda la página. */
+html {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+}
+
+/* Enlaces del menú en blanco para que se lean sobre el fondo oscuro. */
+nav a {
+    color: white;
+}
+
+/* Cada etiqueta y campo del formulario ocupa su propia línea. */
+form label,
+form input,
+form textarea {
+    display: block;
+}
+
+/* 4. SELECTORES DE CLASE (van abajo: tienen mayor especificidad y,
+   por la cascada, pueden sobrescribir a los de tipo) */
+
+/* Encabezado: display flex cambia el comportamiento externo (el header sigue
+   siendo un bloque en la página) e interno (el logo y el menú se ubican en fila). */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e5c3a;
+    padding: 10px 20px;
+}
+
+/* Contenido principal: espacio interno para que el texto no quede pegado a los bordes. */
+.contenido {
+    padding: 20px;
+}
+
+/* Pie: mismo color de fondo que el encabezado, como pide la consigna. */
+.pie {
+    background-color: #3e5c3a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

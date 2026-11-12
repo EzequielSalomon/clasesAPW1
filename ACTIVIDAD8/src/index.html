@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <!-- Se enlaza la hoja de estilos externa: separa la presentación (CSS) del contenido (HTML)
+         y permite que ambas páginas compartan los mismos estilos. -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<!-- ENFOQUE DE NAVEGACIÓN: esta página (catálogo) se plantea como MPA con renderizado del lado
+     del servidor (SSR). El servidor entrega el HTML completo con textos, precios e imágenes,
+     lo que favorece el SEO (los buscadores indexan el contenido) y una primera carga rápida. -->
+
+<body>
+    <!-- Se reemplaza el <div> por <header>: elemento semántico que identifica el encabezado
+         del sitio para navegadores, buscadores y lectores de pantalla. -->
+    <header class="cabecera">
+        <!-- El isologotipo es un enlace al inicio, convención de usabilidad que los usuarios esperan.
+             El atributo alt es importante porque: lo leen los lectores de pantalla, se muestra si
+             la imagen no carga y aporta al SEO. Al ser un enlace, describe también su destino. -->
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio" width="120">
+        </a>
+
+        <!-- <nav> indica que este bloque es la navegación principal del sitio.
+             Se usa una lista <ul> porque el menú es un conjunto de enlaces del mismo nivel. -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <!-- Enlace a un ancla: lleva directo a la sección de cabañas de esta página. -->
+                <li><a href="index.html#cabanas">Cabañas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main> contiene el contenido principal y único de la página. -->
+    <main class="contenido">
+        <!-- Se deja un solo <h1> por página: es el título principal del documento.
+             El segundo <h1> original pasa a ser <h2> para respetar la jerarquía de títulos. -->
+        <h1>Catálogo de Cabañas</h1>
+        <p>Bienvenido a nuestro catálogo de cabañas en San Javier, Traslasierras, Córdoba. Explorá nuestras
+            opciones y encontrá la que mejor se adapte a tus necesidades.</p>
+
+        <!-- Se reemplaza el <div> contenedor por <section>: agrupa contenido temático con su propio título.
+             El id="cabanas" es el destino del enlace "Cabañas" del menú. -->
+        <section id="cabanas">
+            <h2>Cabañas para alquiler</h2>
+
+            <!-- Cada cabaña es un <article>: un contenido independiente y completo en sí mismo,
+                 que tendría sentido aunque se mostrara fuera de esta página. -->
+            <article>
+                <!-- <h3> porque está dentro de la sección cuyo título es <h2>. -->
+                <h3>Cabaña Modelo 1</h3>
+                <!-- <picture> ofrece primero el formato .webp (más liviano, carga más rápido)
+                     y el <img> con .jpg queda como respaldo para navegadores que no lo soporten. -->
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo1.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo1.jpg"
+                        alt="Cabaña Modelo 1 de madera al pie de la montaña en San Javier" width="400">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <!-- <strong> marca el precio como información importante. -->
+                <p><strong>$ 85.000 por día</strong></p>
+                <!-- Cada cabaña enlaza a la página de reservas para facilitar la conversión. -->
+                <a href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article>
+                <h3>Cabaña Modelo 2</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo2.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo2.jpg"
+                        alt="Cabaña Modelo 2 con galería y vista a las sierras" width="400">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p><strong>$ 95.000 por día</strong></p>
+                <a href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article>
+                <h3>Cabaña Modelo 3</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo3.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo3.jpg"
+                        alt="Cabaña Modelo 3 amplia rodeada de vegetación serrana" width="400">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><strong>$ 110.000 por día</strong></p>
+                <a href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article>
+                <h3>Cabaña Modelo 4</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo4.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo4.jpg"
+                        alt="Cabaña Modelo 4 sustentable con amplios ventanales" width="400">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+                <p><strong>$ 125.000 por día</strong></p>
+                <a href="reservas.html">Reservar esta cabaña</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Se reemplaza el <div> por <footer>: elemento semántico para el pie del sitio,
+         con información legal y de cierre. -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <!-- Misma hoja de estilos que index.html para que ambas páginas tengan el mismo diseño. -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<!-- Esta página se plantea como SPA (CSR): el usuario interactúa con el formulario
+     y no necesita aparecer en buscadores. -->
+
+<body>
+    <!-- <header> en lugar de <div>: indica que es el encabezado del sitio.
+         Es igual al de index.html para mantener el mismo layout. -->
+    <header class="cabecera">
+        <!-- El logo es un enlace al inicio. El alt describe la imagen para lectores
+             de pantalla y se muestra si la imagen no carga. -->
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio" width="120">
+        </a>
+
+        <!-- <nav> contiene el menú principal. -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main> contiene el contenido principal de la página. -->
+    <main class="contenido">
+        <h1>Reservas</h1>
+        <!-- Se cambia <h4> por <h2> para no saltear niveles de títulos. -->
+        <h2>Contactanos</h2>
+
+        <!-- action: a dónde se envían los datos. method="post": los datos no se ven en la URL. -->
+        <form action="#" method="post">
+
+            <!-- El for del label es igual al id del input: así quedan enlazados.
+                 El name es el nombre con el que se envía el dato.
+                 required hace que el campo sea obligatorio. -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <!-- type="email" controla que el formato sea de correo. -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- type="date" muestra un calendario para elegir la fecha. -->
+            <label for="desde">Fecha desde</label>
+            <input type="date" id="desde" name="desde" required>
+
+            <label for="hasta">Fecha hasta</label>
+            <input type="date" id="hasta" name="hasta" required>
+
+            <!-- textarea permite escribir un texto largo. -->
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- <footer> en lugar de <div>: indica que es el pie del sitio. -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
